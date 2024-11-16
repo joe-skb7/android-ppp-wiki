@@ -1,0 +1,83 @@
+@import url("styles.css");
+@import url("frontpage.css");
+@import url("overrides.css");
+@import url("calendar.css");
+
+div#content {
+	min-height: 100px;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align:top;
+	*display: inline;
+}
+
+ul#pagelocation {
+	list-style: none;
+	margin-left: 0px;
+	margin-bottom: 5px;
+}
+ul#pagelocation li {
+	list-style: none;
+	display: inline-block;
+}
+ul#pagelocation li a:before {
+	content: none;
+}
+ul#pagelocation li:after {
+	content: "/";
+}
+ul#pagelocation li:last-child:after {
+	content: none;
+}
+
+div#message {
+	clear: both;
+	padding: 5px;
+	background: #E6EAF0;
+ 	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+div.info, .error {
+	text-align: left;
+	font-style: italic;
+	font-size: 16px;
+	padding-left:10px;
+}
+a.clear-link {
+	font-size: 14px;
+}
+a.backlink {
+	font-size: 36px;
+}
+p.status {
+	text-align: left;
+}
+
+p#pageinfo {
+	text-align: right;
+	font-style: italic;
+	font-size: 12px;
+}
+
+ul#credits {
+	list-style: none;
+}
+ul#credits li {
+	display: inline;
+	padding: 0 2px;
+	margin: 0 4px;
+}
+
+div.table-of-contents {
+	margin-top: 5px;
+	padding: 0px 10px 10px 5px;
+}
+
+table.tip {
+	background: red;
+}
+
+td.tip {
+	background: blue;
+}
